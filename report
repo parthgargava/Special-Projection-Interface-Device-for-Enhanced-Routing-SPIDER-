@@ -1,0 +1,703 @@
+ARRANGEMENT OF CONTENTS:
+
+1. Cover Page  
+
+2. Acknowledgement 
+
+3. Abstract
+
+4. Table of Contents
+
+5. List of Tables/List of Figures
+
+6. Abbreviations and Nomenclature( If any)
+
+7.  Introduction
+
+8.  Background study
+
+9.  Requirement Analysis
+
+                  a. Software
+
+b. Hardware
+
+c. Functional requirements
+
+d. Non functional requirements
+
+e. User requirements
+
+f. UML diagram
+
+10. Detailed design
+
+11. Implementation
+
+12. Testing reports
+
+13. Conclusion and Future Scope
+
+14. Gantt Chart
+
+15. References in IEEE format
+
+16. Appendices( If any)
+
+The tables and figures shall be introduced in the appropriate places.
+
+
+ACKNOWLEDGEMENT
+
+
+“It is not possible to prepare a project report without the encouragement of other people. This one is certainly no exception”
+On the very outset of this report, we would like to extend our sincere & heartfelt obligation towards all the personages who have helped us in this endeavour. Without their active guidance, help, cooperation and encouragement, we would not have made headway in the project.
+We are ineffably indebted to Dr Charu Gandhi, Lecturer, Jaypee Institute of Information Technology, Noida for being our mentor and providing us all the support we needed. We cannot imagine how the things would have materialized without her erudite supervision.
+We are extremely thankful and pay our gratitude to our examiner Ms. Anuradha and minor project coordinator Ms. Devpriya Soni for their valuable guidance and support on completion of this project.
+We are also grateful to our family and peers for their unconditional support in our endeavour to delve into the research.
+
+
+
+
+
+
+
+
+                                         ABSTRACT
+To develop a system that projects the GPS route/ directions and other significant details such as the speed limit on a small part of the screen of the helmet or car wind shield.
+This technology not only limits to Just Car windshield and bike helmet GPS projection but also extends to scope of developing advanced war helmets for Indian Military to provide enemy tagging just like advanced fighter planes and U.S navy ground units vision helmets.
+
+This software requirement specification will have minute details of the project and will show it in both a bird’s view and worm’s view. The nature of job, utility and usefulness of the product has been well depicted in the SRS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTRODUCTION
+
+In today’s vehicle driven world, which mostly consists of automobiles such as cars and motor cycles, it becomes essential to have a device which integrates the simplest route directions and map of your destination. However having an android/iOS phone/tablet in your hand while driving/riding becomes risky and cumbersome for safety reasons as it leads the driver/rider to look into the phone repeatedly. Due to this problem, several accidents have taken place in many countries.
+The solution to this problem is to integrate the routes and directives to a place which is more accessible. 
+
+Encountering the problem, we have decided to develop a Machine that Projects the GPS route/ directions on a small part of the screen of the helmet or car wind shield.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BACKGROUND STUDY
+
+REASONS TO CHOOSE THE PROJECT
+•	Navigation on smartphones and GPS are not safe while riding two wheelers/Driving cars and is prohibited by various Countries traffic norms.
+•	Lesser Adaptation of Google maps, GPS and costly Google glasses in Indian market.
+•	Lesser Military utilization of Airforce target tagging mechanism in India for ground service soldiers.
+•	Technological lagging behind for traffic Safety measures.
+•	Developing need of navigation software and products for ease in vast network of roads and flyovers in India for both Indian citizens and Foreign Tourists.
+•	Compelling need to Display Linux OS (Android) applications like Google maps in most secured manner while driving.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REQUIREMENT ANALYSIS
+
+
+HARDWARE REQUIREMENTS
+	
+      
+•	Bike helmet of international safety standards
+•	IPhone, Android smart phone
+•	Phone Display Projector
+•	PROJECTION FILM
+•	Mic and Earphone
+•	Embedded Arduino ATMEGA 328 microcontroller
+
+
+SOFTWARE REQUIREMENTS
+
+•	Android Development Tools
+•	Arduino programming kit
+•	Microsoft Visual basic .NET
+•	Matlab
+•	Code blocks with custom library and compilers
+•	Nvidia CUDA SDK
+•	Nsight Visual Studio Nvidia
+
+
+
+
+
+
+FUNCTIONAL REQUIREMENTS
+
+•	Third party services by Google Inc. for running applications.
+•	SDK library support for all android OS.
+•	Image log refreshing at least 10-15Hz
+•	Localization of the image:
+•	Locating a path in the image of the map is a very important part of the S.P.I.D.E.R system. The image obtained from the droid is the image of a map with an unwanted element on it. But our region of interest lies only in the path way. Therefore the path way is extracted from the image of the map by performing various image processing techniques and morphological operations on the image. In this phase we also eliminate the noises and the distortions present in the image and are therefore left with the desired path only.
+•	Color Segmentation:
+•	Once the desired path is localized on the image of the map and is extracted after deleting all the noises and distortions involved in the image, the next step in this process is segmenting the obtained image through RGB COLOR SPECIFICATION TECHNIQUE.
+NON FUNCTIONAL REQUIREMENTS
+
+Other Nonfunctional Requirements
+Performance Requirements
+In order to assess the performance of a system the following must be clearly specified:
+•	Response Time
+•	Work Load
+•	Scalability
+•	Maintainability
+•	Platform
+Security Requirements
+•	There will be an authentication level to confirm the user.
+•	Voice recognition authentication system will be implemented.
+
+Software Quality Attributes
+•	This product shall be of the highest degree of adaptability as it will be concurrent with robust situation.
+•	Availability
+•	Correctness
+•	Flexibility
+•	Testability
+•	Usability
+•	Reusability
+
+
+External Interface Requirements
+User Interfaces
+•	GUI interface at windshield via sample screen image and voice output/audio digital guidance for the same.
+•	Selection menu for choosing of apps.
+•	Popping interfaced errors for wrong selection, invalid input and failures.
+Hardware Interfaces
+•	Audio/Speech detection mic.
+•	Digital video projection interface.
+•	Smart phone
+•	Hard Keys
+
+Communications Interfaces
+This project use internet via communicating with smart phones and inbuilt GPS system for location detection. This system updates present user information (location) and provides online services about the surroundings like restaurants, hotels, and petrol pumps information.
+
+
+
+
+
+
+
+DETAILED DESIGN FOR HARDWARE INTERFACE
+
+Steps Involved in Phase I:
+•	Connect your android device to PC via USB cable.
+•	Enable USB debugging on your phone.
+•	Start droid@screen.
+•	Start the navigation software- Sygic.
+•	Start the process of taking screenshots.
+
+
+droid@screen (Android at the screen):
+
+droid@screen is a java based software that helps you to easily show the screen of an Android device on a computer/laptop (PC, Mac, Linux, ...) and then project the desktop using a LCD-projector. droid@screen is used for training/teaching and demonstration purposes.
+
+How to install and configure Droid@Screen
+
+Install Java
+
+Droid@Screen is a Java program, so you need to have Java installed. Get the JAVA installer from ORACLE and go for Java version 6 or later (currently its version 7).
+
+ 
+Oracle’s Java download page
+
+Install and configure Android SDK
+
+Droid@Screen uses one program (ADB – Android Debug Bridge) from the Android SDK package. 
+Download and install the Android SDK. And (write it down) in which directory you installed the SDK.
+
+
+
+ .
+
+Android SDK download
+
+The installer should launch the SDK Manager at its last step. If that doesn’t happen, just launch it yourself. There are plenty of things to download. But for Droid@Screen, the only thing you need is the Platform Tools. Choose that one and let the SDK Manager install it.
+
+ 
+Choose the Platform Tools
+
+Create an environment variable named ANDROID_HOME and set its value to the installation directory of the Android SDK.
+Type the Windows-key + BREAK (or choose Properties from My Computer). Choose Advanced Settings to the left. Then choose the Advanced tab and click the Environment Variables button.
+
+ 
+Set the ANDROID_HOME environment variable
+
+
+Configure your Android device
+
+If you haven’t already, you need to install the USB drivers for your phone/tablet. Get the drivers from your vendor’s support pages. That means support of Samsung, HTC, Sony, Motorola, etc.
+You also need to enable USB debugging on your device. Open Settings, the choose Developer Options and finally, ensure USB Debugging is selected.
+ 
+Enable USB debugging on the Android device
+
+
+Launch Droid@Screen
+
+Just double-click the JAR to launch the application. If you want to launch it from the command-line instead, type this
+java –jar droidAtScreen-1.0.1.jar
+If Droid@Screen cannot find the ADB executable based on the environment variable you defined above, it will prompt you for the path. Just navigate to the installation directory of the Android SDK and then into platform-tools/. You should there see the adb.exe file (on Windows).
+ 
+The ADB executable
+ 
+
+How to use it:
+
+After it is installed, just plug-in your device via USB and launch Droid@Screen. After a few moments, the application will launch a new window showing the screen of the Android device.
+ 
+
+
+Android SDK
+The Android SDK provides you the API libraries and developer tools necessary to build, test, and debug apps for Android.
+SDK Manager
+
+The Android SDK separates tools, platforms, and other components into packages you can download using the SDK Manager.
+You can launch the SDK Manager in one of the following ways:
+•	From Eclipse (with ADT), select Window > Android SDK Manager.
+•	On Windows, double-click the SDK Manager.exe file at the root of the Android SDK directory.
+•	On Mac or Linux, open a terminal and navigate to the tools/ directory in the Android SDK, then execute android sdk.
+You can select which packages you want to download by toggling the checkboxes on the left, then click Install to install the selected packages.
+ 
+ The Android SDK Manager shows the SDK packages that are available, already installed, or for which an update is available.
+
+Recommended Packages
+________________________________________
+Here's an outline of the packages required and those we recommend you use:
+
+SDK Tools
+Required. Your new SDK installation already has the latest version. Make sure you keep this up to date.
+SDK Platform-tools
+Required. You must install this package when you install the SDK for the first time.
+SDK Platform
+Required. You must download at least one platform into your environment so you're able to compile your application. In order to provide the best user experience on the latest devices, we recommend that you use the latest platform version as your build target. You'll still be able to run your app on older versions, but you must build against the latest version in order to use new features when running on devices with the latest version of Android.
+To get started, download the latest Android version, plus the lowest version you plan to support (we recommend Android 2.2 for your lowest version).
+System Image
+Recommended. Although you might have one or more Android-powered devices on which to test your app, it's unlikely you have a device for every version of Android your app supports. It's a good practice to download system images for all versions of Android your app supports and test your app running on them with the Android emulator.
+Android Support
+Recommended. Includes a static library that allows you to use some of the latest Android APIs (such as fragments, plus others not included in the framework at all) on devices running a platform version as old as Android 1.6. All of the activity templates available when creating a new project with the ADT Plugin require this. For more information, read Support Library.
+SDK Samples
+Recommended. The samples give you source code that you can use to learn about Android, load as a project and run, or reuse in your own app. Note that multiple samples packages are available — one for each Android platform version. When you are choosing a samples package to download, select the one whose API Level matches the API Level of the Android platform that you plan to use.
+
+
+Support Library
+The Android Support Library package is a set of code libraries that provide backward-compatible versions of Android framework APIs as well as features that are only available through the library APIs. Each Support Library is backward-compatible to a specific Android API level. This design means that your applications can use the libraries' features and still be compatible with devices running Android 1.6 (API level 4) and up.
+v4 Support Library
+________________________________________
+This library is designed to be used with Android 1.6 (API level 4) and higher. It includes the largest set of APIs compared to the other libraries, including support for application components, user interface features, accessibility, data handling, network connectivity, and programming utilities. Here are a few of the key classes included in the v4 library:
+•	App Components
+o	Fragment - Adds support encapsulation of user interface and functionality with Fragments, enabling applications provide layouts that adjust between small and large-screen devices.
+o	Notification Compat - Adds support for rich notification features.
+o	Local Broadcast Manager - Allows applications to easily register for and receive intents within a single application without broadcasting them globally.
+•	User Interface
+o	View Pager - Adds a View Group that manages the layout for the child views, which the user can swipe between.
+o	Pager Title Strip - Adds a non-interactive title strip, that can be added as a child of View Pager.
+o	Pager Tab Strip - Adds a navigation widget for switching between paged views, that can also be used with View Pager.
+o	Drawer Layout - Adds support for creating a Navigation Drawer that can be pulled in from the edge of a window.
+o	Sliding Pane Layout - Adds widget for creating linked summary and detail views that appropriately adapt to various screen sizes.
+
+
+•	Accessibility
+o	Explore By Touch Helper - Adds a helper class for implementing accessibility support for custom views.
+o	Accessibility Event Compat - Adds support for Accessibility Event. For more information about implementing accessibility, see Accessibility.
+o	Accessibility Node Info Compat - Adds support for Accessibility Node Info.
+o	Accessibility Node Provider Compat - Adds support for Accessibility Node Provider.
+o	Accessibility Delegate Compat - Adds support for View.AccessibilityDelegate.
+•	Content
+o	Loader - Adds support for asynchronous loading of data. The library also provides concrete implementations of this class, including Cursor Loader and Async Task Loader.
+o	File Provider - Adds support for sharing of private files between applications.
+There are many other APIs included in this library. For complete, detailed information about the v4 Support Library APIs, see the android.support.v4 package in the API reference.
+v7 Libraries
+________________________________________
+There are several libraries designed to be used with Android 2.1 (API level 7) and higher. These libraries provide specific feature sets and can be included in your application independently from each other.
+
+v7 app compat library
+
+This library adds support for the Action Bar user interface design pattern.
+Note: This library depends on the v4 Support Library. If you are using Ant or Eclipse, make sure you include the v4 Support Library as part of this library's class path.
+Here are a few of the key classes included in the v7 app compat library:
+•	Action Bar - Provides an implementation of the action bar user interface pattern. For more information on using the Action Bar, see the Action Bar developer guide.
+•	Action Bar Activity - Adds an application activity class that must be used as a base class for activities that uses the Support Library action bar implementation.
+•	Share Action Provider - Adds support for a standardized sharing action (such as email or posting to social applications) that can be included in an action bar.
+This library is located in the <sdk>/extras/android/support/v7/appcompat/ directory after you download the Android Support Libraries. This library contains user interface resources. To include it in your application project, follow the instructions for adding libraries with resources.
+The Gradle build script dependency identifier for this library is as follows:
+com.android.support:appcompat-v7:18.0.+
+This dependency notation specifies the release version 18.0.0 or higher.
+
+v7 gridlayout library
+
+This library adds support for the Grid Layout class, which allows you to arrange user interface elements using a grid of rectangular cells. For detailed information about the v7 gridlayout library APIs, see theandroid.support.v7.widget package in the API reference.
+This library is located in the <sdk>/extras/android/support/v7/gridlayout/ directory after you download the Android Support Libraries. This library contains user interface resources. To include it in your application project, follow the instructions for adding libraries with resources.
+The Gradle build script dependency identifier for this library is as follows:
+com.android.support:gridlayout-v7:18.0.+
+This dependency notation specifies the release version 18.0.0 or higher.
+
+v7 media router library
+
+This library provides Media Router, Media Route Provider, and related media classes that support the Google Cast developer preview.
+In general, the APIs in the v7 media router library provide a means of controlling the routing of media channels and streams from the current device to external screens, speakers, and other destination devices. The library includes APIs for publishing app-specific media route providers, for discovering and selecting destination devices, for checking media status, and more. For detailed information about the v7 media router library APIs, see theandroid.support.v7.media package in the API reference.
+The v7 media router library is located in the <sdk>/extras/android/support/v7/mediarouter/ directory after you download the Android Support Library. It's provided as a library project with a dependency on the v7 app compat library, so you'll need to include both libraries in your build path when setting up your project. For more information on how to set up your project, follow the instructions in adding libraries with resources. If you are developing in Eclipse/ADT, make sure to include both the android-support-v7-mediarouter.jar and android-support-v7-appcompat.jarfiles.
+If you are using Android Studio, all you need to do is specify the Gradle build script dependency identifiercom.android.support:support-v7-mediarouter:<revision>, where "18.0.0" is the minimum revision at which the library is available. For example:
+com.android.support:mediarouter-v7:18.0.+
+The v7 media router library APIs introduced in Support Library r18 are subject to change in later revisions of the Support Library. At this time, we recommend using the library only in connection with the Google Cast developer preview.
+v8 Support Library
+________________________________________
+This library is designed to be used with Android (API level 8) and higher. It adds support for the Render Script computation framework. These APIs are included in the android.support.v8.renderscript package. You should be aware that the steps for including these APIs in your application are very different from other support library APIs. For more information about using these APIs in your application, see the Render Script developer guide.
+Note: Use of Render Script with the support library is supported with the Android Eclipse plugin and Ant build tools. It is not currently supported with Android Studio or Gradle-based builds.
+
+
+v13 Support Library
+________________________________________
+This library is designed to be used for Android 3.2 (API level 13) and higher. It adds support for the Fragment user interface pattern with the (Fragment Compat) class and additional fragment support classes For more information about fragments, see the Fragments developer guide. For detailed information about the v13 Support Library APIs, see the android.support.v13 package in the API reference.
+This library is located in the <sdk>/extras/android/support/v13/ directory after you download the Android Support Libraries. This library does not contain user interface resources. To include it in your application project, follow the instructions for adding libraries without resources.
+The Gradle build script dependency identifier for this library is as follows:
+com.android.support:support-v13:18.0.+
+This dependency notation specifies the release version 18.0.0 or higher
+
+Platform Tools
+________________________________________
+The platform tools are typically updated every time you install a new SDK platform. Each update of the platform tools is backward compatible with older platforms. Usually, you directly use only one of the platform tools—the Android Debug Bridge (adb). Android Debug Bridge is a versatile tool that lets you manage the state of an emulator instance or Android-powered device. You can also use it to install an Android application (.apk) file on a device.
+The other platform tools, such as aidl, aapt, dexdump, and dx, are typically called by the Android build tools or Android Development Tools (ADT), so you rarely need to invoke these tools directly. As a general rule, you should rely on the build tools or the ADT plugin to call them as needed.
+
+Android Debug Bridge
+
+Android Debug Bridge (adb) is a versatile command line tool that lets you communicate with an emulator instance or connected Android-powered device. It is a client-server program that includes three components:
+•	A client, which runs on your development machine. You can invoke a client from a shell by issuing an adb command. Other Android tools such as the ADT plugin and DDMS also create adb clients.
+•	A server, which runs as a background process on your development machine. The server manages communication between the client and the adb daemon running on an emulator or device.
+•	A daemon, which runs as a background process on each emulator or device instance.
+
+
+
+Chapter 1
+Fundamentals of Image Processing
+
+1.1	Image
+
+An image is used to convey useful information in a visible format. An image is nothing but an arrangement of tiny elements in a two-dimensional plane. These tiny elements are called Pixels. A large number of pixels combine together to form an image, whether small or large. Each pixel represents certain information about the image, like color, light intensity and luminance. A large number of such pixels combine together to form an image. Pixel is the basic element used to describe an image. Mostly, each pixel in an image is represented in RGB (Red Green Blue) format. In an RGB image, all the three components, namely Red, Green and Blue combine together to convey information about the color and brightness of a single pixel. Each component consumes certain memory space during image processing.
+	
+1.2	Image Processing
+
+In imaging science, Image Processing is any form of signal processing for which the input is an image, such as a photograph or video frame, and the output of the image processing may be either an image or a set of characteristics or parameters related to the image. Most image processing techniques involve treating the image as a two dimensional signal and applying standard signal processing techniques to it. Image processing usually refers to digital image processing, but optical and analog image processing also are possible.
+
+Digital Image Processing is the use of computer algorithms to perform image processing on digital images. As a subcategory or field of digital signal processing, digital image processing has many advantages over  analog  image processing. It allows a much wider range of algorithms to be applied to the input data and can avoid problems such as the build-up of noise and signal distortion during processing. Since images are defined over two dimensions (perhaps more) digital image processing may be modeled in the form of multidimensional systems. The digital image processing typically is executed by special software programs that can manipulate the images in many ways.
+Modern digital technology has made it possible to manipulate multi-dimensional signals with systems that range from simple digital circuits to advanced parallel computers. The goal of this manipulation can be divided into three categories:
+	Image Processing (image in         image out)
+	Image Analysis (image in         measurements out)
+	Image Understanding (image in         high-level description out)
+
+In modern sciences and technologies, images also gain much broader scopes due to the ever growing importance of scientific visualization (of often large-scale complex scientific/experimental data). Examples include microarray data in genetic research, or real time multi-asset portfolio trading in finance.
+
+Before processing an image, it is converted into a digital form. Digitization includes sampling of image and quantization of sampled values. After converting the image into bit information, processing is performed. This processing technique may be Image enhancement, Image restoration, and Image compression.
+
+Image Enhancement:
+It refers to accentuation, or sharpening, of image features such as boundaries, or contrast to make a graphic display more useful for display & analysis. This process does not increase the inherent information content in data. It includes gray level & contrast manipulation, noise reduction, edge crisping and sharpening, filtering, interpolation and magnification, pseudo coloring etc.
+
+Image Restoration:
+It is concerned with filtering the observed image to minimize the effect of degradations. Effectiveness of image restoration depends on the extent and accuracy of the knowledge of degradation process as well as on filter design. Image restoration differs from image enhancement in that the latter is concerned with more extraction or accentuation of image features.
+
+Image Compression:
+It is concerned with minimizing the number of bits required to represent an image. Application of compression are in broadcast TV, remote sensing via satellite, military communication via aircraft, radar, teleconferencing, facsimile transmission, medical images that arise in computer tomography, magnetic resonance imaging and digital radiology, satellite images, geological surveys etc.
+
+The Challenge :
+Motorcyclists still need an effective navigation tool except the usual paper maps or touch-screen navigators. Using maps requires frequent stops; navigators distract the biker’s attention and are not safe to be operated on the go.
+There is a device that would perfectly meet the bikers’ requirements but up to the present day only fighter pilots could enjoy its advantages
+1.1	The Solution :
+We worked a lot and now have a solution: 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter 2
+Software Implementation
+
+2.1 General Constraints
+Following are the requirements that must be fulfilled for the success of the  image processing  system:
+
+Hardware:
+	Windows XP or higher/Linux
+	Minimum 500MB RAM
+
+Software:
+	MATLAB 6.5 onwards
+
+Product Requirements and Functions:
+	Interface and routine to read JPEG and PNG image files
+	Routine to segment images
+	Template images (monochrome bitmap) for initialization of knowledge base 
+	Routine to recognize the final path way
+	Interface that displays result and saves it on a file
+
+2.2 Assumptions and Dependences
+It is assumed that the cameras and frame grabbers (part of the hardware system) are able to take images without excessive perspective distortion.
+The supplied images should ideally be resized to 600x800 pixels to improve running time considerations.
+
+                                              2.4 Steps Involved in Image Processing
+
+
+
+
+
+
+
+
+
+
+
+Chapter 3
+Localization
+
+The first step in the process of processing is the Localization of the region in the image of the maps. Localization is done because the region of our interest is the path way only. The rest of the image is of no use and if considered, it may also increase the amount of error since then the candidate regions for segmentation purpose would increase.
+For localization process, the image is first imported into the MATLAB. The image is a JPEG format file and each pixel has a different RGB value. So to introduce some consistency throughout the image, the image needs to be converted into an easier format.
+
+3.1 Noise Elimination
+                 Image noise is random (not present in the object imaged) variation of brightness or color information in images, and is usually an aspect of electronic noise. It can be produced by the sensor and circuitry of a scanner or digital camera. Image noise can also originate in film grain and in the unavoidable shot noise of an ideal photon detector. Image noise is an undesirable by-product of image capture that adds spurious and extraneous information.
+Most algorithms for converting image sensor data to an image, whether in-camera or on a computer, involve some form of noise reduction. There are many procedures for this, but all attempt to determine whether the actual differences in pixel values constitute noise or real photographic detail, and average out the former while attempting to preserve the latter.
+A median filter is an example of a non-linear filter and, if properly designed, is very good at preserving image detail. To run a median filter:
+•	Consider each pixel in the image
+•	Sort the neighboring pixels into order based upon their intensities
+•	Replace the original value of the pixel with the median value from the list
+A median filter is a rank-selection (RS) filter, a particularly harsh member of the family of rank-conditioned rank-selection (RCRS) filters a much milder member of that family, for example one that selects the closest of the neighboring values when a pixel's value is external in its neighborhood, and leaves it unchanged otherwise, is sometimes preferred, especially in photographic applications. Median and other RCRS filters are good at removing salt and pepper noise from an image, and also cause relatively little blurring of edges, and hence are often used in computer vision applications.
+3.2 RGB Color Specification
+
+1.1.1	Description:
+
+This function creates colors corresponding to the given intensities (between 0 and max) of the red, green and blue primaries. The color specification refers to the standard RGB color space (IEC standard 61966).
+An alpha transparency value can also be specified (as an opacity, so 0 means fully transparent and max means opaque). If alpha is not specified, an opaque color is generated.
+The names argument may be used to provide names for the colors.
+The values returned by these functions can be used with a col= specification in graphics functions.
+
+1.1.2	Usage:
+
+RGB (red, green, blue, alpha, names = NULL, maxColorValue = 1)
+
+1.1.3	Arguments:
+
+•	Red, Blue, Green, Alpha	Numeric vectors with values in [0, M] where M is maxColorValue. When this is 255, the red, blue, green, and alpha values are coerced to integers in 0:255 and the result are computed most efficiently.
+•	Names	Character. The names for the resulting vector.
+•	Max color value 	Number giving the maximum of the color values range, see above.
+1.1.4	Details:
+
+The colors may be specified by passing a matrix or data frame as argument red, and leaving blue and green missing. In this case the first three columns of red are taken to be the red, green and blue values.
+Most other graphics devices plot semi-transparent colors as fully transparent, usually with a warning when first encountered.
+Color Spec is not a function; it refers to the three ways in which you specify color for MATLAB® graphics:
+
+•	RGB triple
+•	Short name
+•	Long name
+
+The short names and long names are MATLAB strings that specify one of eight predefined colors. The RGB triple is a three-element row vector whose elements specify the intensities of the red, green, and blue components of the color; the intensities must be in the range [0 1]. The following table lists the predefined colors and their RGB equivalents.
+
+
+RGB Value	Short Name	Long Name
+[1 1 0]	Y	yellow
+[1 0 1]	M	magenta
+[0 1 1]	C	cyan
+[1 0 0]	R	Red
+[0 1 0]	G	green
+[0 0 1]	B	blue
+[1 1 1]	W	white
+[0 0 0]	K	black
+
+
+3.3 Results
+The image obtained after the localization, is the image of the desired path extracted from the input image and this can be used for segmentation purpose. Most of the noises and distortions will be removed after this method, but some issues may still be there due to certain defects in the image:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter 4
+Segmentation
+
+The next step in the system is the segmentation of the image in order to extract the path individually for recognition. It is one of the most popular topics in image processing study. The segmentation process becomes important to the processing of the image to find the meaningful information where it comes from the meaningful regions which represent higher level of data.
+
+The goal of the segmentation process is to find regions that represent meaningful parts of the objects based on the interest of the study. Image segmentation methods will look for objects that either have some measure of homogeneity (within them), or contrast (with the objects on their border).
+Various methods of segmentation have been employed so far in this field. Some of them are:
+
+	Thresholding : 
+
+Thresholding is one of the simplest and most popular methods in image segmentation. Two common types of thresholding are Local thresholding and Global thresholding. Local thresholding is referred when an image is partitioned into sub-regions carrying different value of threshold. Global thresholding is referring to assigning only one threshold value to the entire image.
+Bi-level Thresholding is the technique in which the image is in two regions which are object (coloured) and background (black).
+
+
+	Region Based Segmentation:
+
+This technique attempts to classify a particular image into several regions or classes according to the common properties of the image like pattern and texture, intensity value and spectral profiles of the image.
+
+
+
+
+
+
+
+
+
+
+      Chapter 5
+Results obtained
+	
+In this chapter we will show all the steps involved in the Image Recognition mechanism pictorially.
+
+5.1 Image Localization and Pre-Processing
+
+The image used for the testing is shown below:
+
+ 
+Figure1
+
+   Figure2                       Figure3                      Figure4
+                                                      
+Figure5
+
+
+5.2 What do these figures signify??? 
+
+•	Figure1: It’s an input image for a system on which image processing has to be applied. It consists of various unwanted elements which are we removing through image processing technique.
+
+•	Figure2: It’s an output image consists of one of the desired path which we require for further processing. It consists of violet region of our interest.
+
+•	Figure3: It’s an output image consists of one of the desired path which we require for further processing. It consists of yellow region of our interest.
+
+•	Figure4:  It is also an output image consists of one of the desired path which we require for further processing. It consists of white region of our interest and it also showing the various other connected paths (highways, roads).
+
+•	Figure5: It’s a final output image consisting of violet, yellow, and white path which are our desired region of interest. It does not contain any unwanted elements. Basically it consists of a path which is having a navigation mark on it(which will move when the user navigate it)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PHASE THREE
+
+
+What is CUDA?
+
+CUDA™ is a parallel computing platform and programming model that enables dramatic increases in computing performance by harnessing the power of the graphics processing unit (GPU). 
+Since its introduction in 2006, CUDA has been widely deployed through thousands of applications and published research papers, and supported by an installed base of over 300 million CUDA-enabled GPUs in notebooks, workstations, compute clusters and supercomputers.  Learn more about GPU-accelerated applications available for astronomy, biology, chemistry, physics, data mining, manufacturing, finance, and more on the software solutions page.
+Software developers, scientists and researchers can add support for GPU acceleration in their own applications using one of three simple approaches:
+1.	Drop in a GPU-accelerated library to replace or augment CPU-only libraries such as MKL BLAS, IPP, FFTW and other widely-used libraries
+2.	Automatically parallelize loops in Fortran or C code using OpenACC directives for accelerators
+3.	Develop custom parallel algorithms and libraries using a familiar programming language such as C, C++, C#, Fortran, Java, Python, etc.
+
+
+CUDA (aka Compute Unified Device Architecture) is a parallel computing platform and programming model created by NVIDIA and implemented by the graphics processing units (GPUs) that they produce.[1] CUDA gives program developers direct access to the virtual instruction set and memory of the parallel computational elements in CUDA GPUs.
+Using CUDA, the GPUs can be used for general purpose processing (i.e., not exclusively graphics); this approach is known as GPGPU. Unlike CPUs, however, GPUs have a parallel throughput architecture that emphasizes executing many concurrent threads slowly, rather than executing a single thread very quickly.
+The CUDA platform is accessible to software developers through CUDA-accelerated libraries, compiler directives (such asOpenACC), and extensions to industry-standard programming languages, including C, C++ and Fortran. C/C++ programmers use 'CUDA C/C++', compiled with "nvcc", NVIDIA's LLVM-based C/C++ compiler,[2] and Fortran programmers can use 'CUDA Fortran', compiled with the PGI CUDA Fortran compiler from The Portland Group.
+In addition to libraries, compiler directives, CUDA C/C++ and CUDA Fortran, the CUDA platform supports other computational interfaces, including the Khronos Group's OpenCL, Microsoft'sDirectCompute, and C++ AMP. Third party wrappers are also available for Python, Perl, Fortran, Java, Ruby, Lua, Haskell, MATLAB, IDL, and native support in Mathematica.
+In the computer game industry, GPUs are used not only for graphics rendering but also in game physics calculations (physical effects like debris, smoke, fire, fluids); examples include PhysX andBullet. CUDA has also been used to accelerate non-graphical applications in computational biology, cryptography and other fields by an order of magnitude or more. 
+CUDA provides both a low level API and a higher level API. The initial CUDA SDK was made public on 15 February 2007, for Microsoft Windows and Linux. Mac OS X support was later added in version 2.0, which supersedes the beta released February 14, 2008.[11] CUDA works with all Nvidia GPUs from the G8x series onwards, including GeForce, Quadro and the Tesla line. CUDA is compatible with most standard operating systems. Nvidia states that programs developed for the G8x series will also work without modification on all future Nvidia video cards, due to binary compatibility.
