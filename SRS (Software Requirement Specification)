@@ -1,0 +1,270 @@
+Table of Contents
+Table of Contents	ii
+1.	Introduction	1
+1.1	Purpose	1
+1.2	Document Conventions	1
+1.3	Intended Audience and Reading Suggestions	1
+1.4	Project Scope	1
+1.5	References	1
+2.	Overall Description	2
+2.1	Product Perspective	2
+2.2	Product Features	2
+2.3	User Classes and Characteristics	2
+2.4	Operating Environment	2
+2.5	Design and Implementation Constraints	2
+2.6	User Documentation	2
+2.7	Assumptions and Dependencies	3
+3.	System Features	3
+3.1	System Feature 1	3
+3.2	System Feature 2 (and so on)	4
+4.	External Interface Requirements	4
+4.1	User Interfaces	4
+4.2	Hardware Interfaces	4
+4.3	Communications Interfaces	4
+5.	Other Nonfunctional Requirements	5
+5.1	Performance Requirements	5
+5.2	Safety Requirements	5
+5.3	Security Requirements	5
+5.4	Software Quality Attributes	5
+
+
+ 
+1.	Introduction
+To develop a system that projects the GPS route/ directions and other significant details such as the speed limit on a small part of the screen of the helmet or car wind shield.
+This technology not only limits to Just Car windshield and bike helmet GPS projection but also extends to scope of developing advanced war helmets for Indian Military to provide enemy tagging just like advanced fighter planes and U.S navy ground units vision helmets.
+
+This software requirement specification will have minute details of the project and will show it in both a bird’s view and worm’s view. The nature of job, utility and usefulness of the product has been well depicted in the SRS.
+
+1.1	Purpose
+1.2	Product purpose
+In today’s vehicle driven world, which mostly consists of automobiles such as cars and motor cycles, it becomes essential to have a device which integrates the simplest route directions and map of your destination. However having an android/iOS phone/tablet in your hand while driving/riding becomes risky and cumbersome for safety reasons as it leads the driver/rider to look into the phone repeatedly. Due to this problem, several accidents have taken place in many countries.
+The solution to this problem is to integrate the routes and directives to a place which is more accessible. 
+•	Navigation on smartphones and GPS are not safe while riding two wheelers/Driving cars and is prohibited by various Countries traffic norms.
+•	Lesser Adaptation of Google maps, GPS and costly Google glasses in Indian market.
+•	Technological lagging behind for traffic Safety measures.
+•	Developing need of navigation software and products for ease in vast network of roads and flyovers in India for both Indian citizens and Foreign Tourists.
+•	Compelling need to Display Linux OS (Android) applications like Google maps in most secured manner while driving.
+
+ 
+1.3	Document Conventions
+
+Electrical and Control Engineering (ICECE), 2011 International Conference on
+1.4	Intended Audience and Reading Suggestions
+This product will act as a life saver for those with automobiles such as cars and motorbikes will be an aid for them while driving/riding through the roads:
+a)	For the purpose of directions 
+b)	For the purpose of understanding the speed limit of various roads
+c)	For the purpose of tearing through traffic
+d)	For making the routes on a map more comprehensive
+
+This document will act as the read-up for utmost specifications of the product.
+1.5	Project Scope
+Purpose-
+
+The product will be used, as stated above, for aiding in directions, routes, speed limit and alarms to the user.
+
+Goals-
+
+a)	To ensure proper display of maps, routes, location and destination points
+b)	To ensure display of speed limits of various roads
+c)	To provide an alarm system in case of violation of the speed limit
+
+Business Strategies and Corporate Goals-
+
+a)	Can be used as a compulsory product in the near future by government and private companies.
+b)	Can be used in automated car/bike system.
+
+
+
+
+
+
+
+
+
+
+
+
+1.6	References
+PROJECTION BASED IMAGE AND VIDEO INPAINTING USING WAVELETS
+Kedar A. Patwardhan and Guillermo Sapiro
+Department of Electrical and Computer Engineering,
+University of Minnesota, Minneapolis, MN-55455, USA.
+
+IMAGE PROCESSING BASED CALIBRATION OF HIGH PRECISION LASER
+PROJECTION SYSTEMS
+A. Kulckea*, C. Gurschlera, C. Gasserb and A. Nielb
+a CTR – Carinthian Tech Research AG,
+Europastraße 4, A-9524 Villach /St. Magdalena, Austria
+axel.kulcke@ctr.at
+b Institute of Digital Image Processing / Joanneum Research,
+Wastiangasse 6, A-8010 Graz, Austria
+albert.niel@joanneum.at
+
+Improving Registration by Image Registration
+Michal Irani & Shmuel Peleg
+Department Of Computer Science, the Hebrew University of Jerusalem, Israel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+2.	Overall Description
+2.1	Product Perspective
+This innovative product is a first time in this area of image processing and does not have a follow on member. The origin of it has been from the necessity of a product to be of ease while driving/riding.
+2.2	Product Features
+This product will have the following features:
+a)	Will display the route on the navigation system
+b)	Will provide the map from the current point to the destination point
+c)	Will show the speed limit of the zone in which you are driving/riding
+d)	Will provide an alarm system if speed limit is exceeded
+
+2.3	User Classes and Characteristics
+1)	Admin- Responsible for all the up gradations and system changes and will be having privileged rights.
+2)	User (Driver/Rider) - will be the main link between hardware and software and will be utilizing the facilities by the means of two hard keys.
+3)	Service Department- Responsible for the functionality and maintainace. 
+            
+2.4	Operating Environment
+Hardware Platform: Android Smartphones, Projector
+Software Platform: Android v2.1 or higher, Java Runtime Environment
+
+2.5	Design and Implementation Constraints
+•	Secured login for the user.
+•	Hardware limitations – low photovoltaic projector, android smartphones, high speed usb debugging cable.
+•	Compatibility with varying smartphones hardware and architecture.
+
+
+
+
+
+2.6	User Documentation
+DFD diagrams and Use case diagrams
+2.7	Assumptions and Dependencies
+This Product/Project relies on third party softwares and services like Google services and android support for the same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.	System Features
+3.1	Navigation system features
+3.1.1	Description and Priority
+This project system works on the application of smart phone apps and services provided to facilitate common man.This system gives high priority to easy user interface of such apps and services to a driver with various external hardware and sensors.  
+3.1.2	Stimulus/Response Sequences
+•	Interface and configuration of software at start up for compatibility with the user.
+•	Selections and commands via external hardware to smart phones.
+•	Processing and display of options to the user from multiple results.
+•	Optimized dynamic result projection.
+3.1.3	Functional Requirements
+•	Third party services by Google Inc. for running applications.
+•	SDK library support for all android OS.
+•	Image log refreshing at least 10-15Hz
+
+
+
+
+
+
+
+
+
+
+
+
+4.	External Interface Requirements
+4.1	User Interfaces
+•	GUI interface at windshield via sample screen image and voice output/audio digital guidance for the same.
+•	Selection menu for choosing of apps.
+•	Popping interfaced errors for wrong selection, invalid input and failures.
+4.2	Hardware Interfaces
+•	Audio/Speech detection mic.
+•	Digital video projection interface.
+•	Smart phone
+•	Hard Keys
+4.3	Communications Interfaces
+This project use internet via communicating with smart phones and inbuilt GPS system for location detection. This system updates present user information (location) and provides online services about the surroundings like restaurants, hotels, and petrol pumps information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Other Nonfunctional Requirements
+Performance Requirements
+In order to assess the performance of a system the following must be clearly specified:
+•	Response Time
+•	Work Load
+•	Scalability
+•	Maintainability
+•	Platform
+Security Requirements
+•	There will be an authentication level to confirm the user.
+•	Voice recognition authentication system will be implemented.
+
+Software Quality Attributes
+•	This product shall be of the highest degree of adaptability as it will be concurrent with robust situation.
+•	Availability
+•	Correctness
+•	Flexibility
+•	Testability
+•	Usability
+•	Reusability
+
+
+
